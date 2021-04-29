@@ -10,6 +10,8 @@ import UIKit
 class UserInfoVC: UIViewController {
     
     var username: String!
+    
+    var test: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
