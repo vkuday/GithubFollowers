@@ -8,6 +8,9 @@
 import UIKit
 
 class GFItemInfoVC: UIViewController {
+    
+    let stackView = UIStackView()
+    let itemInfoViewOne = GFItemInfoView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
