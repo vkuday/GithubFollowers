@@ -11,6 +11,8 @@ class GFItemInfoVC: UIViewController {
     
     let stackView = UIStackView()
     let itemInfoViewOne = GFItemInfoView()
+    let itemInfoViewTwo = GFItemInfoView()
+    let actionButton = GFButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
