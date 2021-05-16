@@ -2,7 +2,7 @@
 //  GFDataLoadingVC.swift
 //  GithubFollowers
 //
-//  Created by yupana on 5/5/21.
+//  Created by volkan on 5/5/21.
 //
 
 import UIKit
@@ -51,5 +51,4 @@ class GFDataLoadingVC: UIViewController {
         emptyStateView.frame = view.bounds
         view.addSubview(emptyStateView)
     }
-
 }

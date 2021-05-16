@@ -2,7 +2,7 @@
 //  UIHelper.swift
 //  GithubFollowers
 //
-//  Created by yupana on 4/26/21.
+//  Created by volkan on 4/26/21.
 //
 
 import UIKit
@@ -22,5 +22,4 @@ enum UIHelper {
         
         return flowLayout
     }
-    
 }

@@ -2,7 +2,7 @@
 //  UserInfoVC.swift
 //  GithubFollowers
 //
-//  Created by yupana on 4/28/21.
+//  Created by volkan on 4/28/21.
 //
 
 import UIKit
@@ -57,6 +57,7 @@ class UserInfoVC: GFDataLoadingVC {
             switch result {
             case .success(let user):
                 DispatchQueue.main.async { self.configureUIElements(with: user) }
+                
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
             }

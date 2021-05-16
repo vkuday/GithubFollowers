@@ -2,7 +2,7 @@
 //  GFTitleLabel.swift
 //  GithubFollowers
 //
-//  Created by yupana on 4/13/21.
+//  Created by volkan on 4/13/21.
 //
 
 import UIKit

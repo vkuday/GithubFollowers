@@ -2,7 +2,7 @@
 //  PersistenceManager.swift
 //  GithubFollowers
 //
-//  Created by yupana on 5/3/21.
+//  Created by volkan on 5/3/21.
 //
 
 import Foundation
@@ -32,6 +32,7 @@ enum PersistenceManager {
                     }
                     
                     favorites.append(favorite)
+                    
                 case .remove:
                     favorites.removeAll(where: { $0.login == favorite.login })
                 }

@@ -2,7 +2,7 @@
 //  FollowerCell.swift
 //  GithubFollowers
 //
-//  Created by yupana on 4/14/21.
+//  Created by volkan on 4/14/21.
 //
 
 import UIKit
@@ -24,11 +24,9 @@ class FollowerCell: UICollectionViewCell {
     }
     
     func set(follower: Follower) {
+        avatarImageView.downloadImage(fromURL: follower.avatarUrl)
         usernameLabel.text = follower.login
-        NetworkManager.shared.downloadImage(from: follower.avatarUrl) { [weak self] (image) in
-            guard let self = self else { return }
-            DispatchQueue.main.async { self.avatarImageView.image = image }
-        }
+        
     }
     
     private func configure() {
@@ -48,5 +46,4 @@ class FollowerCell: UICollectionViewCell {
             usernameLabel.heightAnchor.constraint(equalToConstant: 20)
         ])
     }
-    
 }

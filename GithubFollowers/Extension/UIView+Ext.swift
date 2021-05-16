@@ -2,7 +2,7 @@
 //  UIView+Ext.swift
 //  GithubFollowers
 //
-//  Created by yupana on 5/12/21.
+//  Created by volkan on 5/12/21.
 //
 
 import UIKit

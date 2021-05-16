@@ -2,7 +2,7 @@
 //  UITableView+Ext.swift
 //  GithubFollowers
 //
-//  Created by yupana on 5/13/21.
+//  Created by volkan on 5/13/21.
 //
 
 import UIKit
@@ -16,5 +16,4 @@ extension UITableView {
     func removeExcessCells() {
         tableFooterView = UIView(frame: .zero)
     }
-    
 }

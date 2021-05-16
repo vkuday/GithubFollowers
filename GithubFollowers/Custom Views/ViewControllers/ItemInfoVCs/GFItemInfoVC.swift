@@ -2,7 +2,7 @@
 //  GFItemInfoVC.swift
 //  GithubFollowers
 //
-//  Created by yupana on 4/30/21.
+//  Created by volkan on 4/30/21.
 //
 
 import UIKit
@@ -38,7 +38,7 @@ class GFItemInfoVC: UIViewController {
         configureStackView()
     }
 
-    func configureBackgroundView() {
+    private func configureBackgroundView() {
         view.layer.cornerRadius = 10
         view.backgroundColor = .secondarySystemBackground
     }
@@ -55,9 +55,7 @@ class GFItemInfoVC: UIViewController {
         actionButton.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
     }
     
-    @objc func actionButtonTapped() {
-        
-    }
+    @objc func actionButtonTapped() {}
     
     private func layoutUI() {
         view.addSubviews(stackView, actionButton)

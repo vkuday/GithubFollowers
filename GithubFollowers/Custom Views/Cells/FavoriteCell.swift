@@ -2,7 +2,7 @@
 //  FavoriteCell.swift
 //  GithubFollowers
 //
-//  Created by yupana on 5/4/21.
+//  Created by volkan on 5/4/21.
 //
 
 import UIKit
@@ -23,11 +23,8 @@ class FavoriteCell: UITableViewCell {
     }
     
     func set(favorite: Follower) {
+        avatarImageView.downloadImage(fromURL: favorite.avatarUrl)
         usernameLabel.text = favorite.login
-        NetworkManager.shared.downloadImage(from: favorite.avatarUrl) { [weak self] (image) in
-            guard let self = self else { return }
-            DispatchQueue.main.async { self.avatarImageView.image = image }
-        }
     }
     
     private func configure() {
@@ -48,5 +45,4 @@ class FavoriteCell: UITableViewCell {
             usernameLabel.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
-
 }

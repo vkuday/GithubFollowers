@@ -2,7 +2,7 @@
 //  GFRepoItemVC.swift
 //  GithubFollowers
 //
-//  Created by yupana on 5/2/21.
+//  Created by volkan on 5/2/21.
 //
 
 import UIKit
@@ -38,5 +38,4 @@ class GFRepoItemVC: GFItemInfoVC {
     override func actionButtonTapped() {
         delegate.didTapGitHubProfile(for: user)
     }
-    
 }
